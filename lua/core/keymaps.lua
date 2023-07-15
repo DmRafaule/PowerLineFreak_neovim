@@ -20,3 +20,8 @@ vim.keymap.set("n", "N", "<Nzzzv")
 -- When you copy something and after paste this with selection your previose copy will be gone
 -- Not any more
 vim.keymap.set("x", "<leader>p", "\"_dP")
+-- Save all buffers
+vim.keymap.set("n", "<C-s>", ":wa<CR>")
+-- Exit from insert mode quiqlly
+vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("n", "<C-g>", ":vimgrep ")
