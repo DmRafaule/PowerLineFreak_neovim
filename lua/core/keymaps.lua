@@ -22,6 +22,14 @@ vim.keymap.set("n", "N", "<Nzzzv")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 -- Save all buffers
 vim.keymap.set("n", "<C-s>", ":wa<CR>")
+-- Save session
+vim.keymap.set("n", "<C-;>", ":mks! session.vim<CR>")
+-- Restore session(assuming you in root directory)
+vim.keymap.set("n", "<C-L>", ":so session.vim<CR>")
 -- Exit from insert mode quiqlly
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<C-g>", ":vimgrep ")
+
+
+
+
